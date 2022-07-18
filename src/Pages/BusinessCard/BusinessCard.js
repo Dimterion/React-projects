@@ -22,7 +22,7 @@ function BusinessCard() {
         <p className="profile-text">
           I'm a frontend developer interested in learning new technologies by
           applying them to the projects I work on. I also like writing about my
-          experience. You can check my GitHub and Medium pages by visiting the
+          experience. You can check my Twitter and GitHub pages by visiting the
           links at the bottom.
         </p>
         <h3 className="profile-text-title">Interests</h3>
