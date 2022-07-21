@@ -1,7 +1,7 @@
 import "./travelJournal.css";
 import earthIcon from "../../assets/earth-icon.png";
 import { travelData } from "../../assets/travelData";
-import TravelCard from "../../components/TravelCard";
+import TravelCard from "../../components/TravelCard/TravelCard";
 
 function TravelJournal() {
   const travelCards = travelData.map((data) => {
