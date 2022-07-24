@@ -1,0 +1,14 @@
+.tenzieElement {
+  background-color: var(--textGolden);
+  border-radius: 10px;
+  padding: 2vh;
+  margin: 1vw;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.tenzieClicked {
+  background-color: var(--redBackground);
+}

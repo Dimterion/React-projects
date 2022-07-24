@@ -1,0 +1,40 @@
+.tenzies-section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--textLight);
+  width: 90vw;
+  height: 80vh;
+  margin: 5vh auto;
+  border-radius: 10px;
+}
+
+.tenziesElements-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.rollDice-btn {
+  margin-top: 5vh;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--buttonColor);
+  border: 1px solid var(--buttonColor);
+  color: var(--textLight);
+  transition: 0.5s;
+}
+
+.rollDice-btn:hover {
+  background-color: var(--textLight);
+  border: 1px solid var(--buttonColor);
+  color: var(--buttonColor);
+  transition: 0.5s;
+}
+
+.rollDice-btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
