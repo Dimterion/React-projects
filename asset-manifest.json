@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-projects/static/css/main.7cb0ad9b.css",
-    "main.js": "/React-projects/static/js/main.57c7f3f8.js",
+    "main.js": "/React-projects/static/js/main.2e07e4af.js",
     "static/media/memeGeneratorImg.png": "/React-projects/static/media/memeGeneratorImg.779f3f8f15984dae7fb9.png",
     "static/media/travelJournalImg.png": "/React-projects/static/media/travelJournalImg.7a30a821939fd7d709a4.png",
     "static/media/avatar.png": "/React-projects/static/media/avatar.2cb985175aab4a5202a8.png",
@@ -9,10 +9,10 @@
     "static/media/businessCardImg.png": "/React-projects/static/media/businessCardImg.4dfe5afa266e349c9274.png",
     "index.html": "/React-projects/index.html",
     "main.7cb0ad9b.css.map": "/React-projects/static/css/main.7cb0ad9b.css.map",
-    "main.57c7f3f8.js.map": "/React-projects/static/js/main.57c7f3f8.js.map"
+    "main.2e07e4af.js.map": "/React-projects/static/js/main.2e07e4af.js.map"
   },
   "entrypoints": [
     "static/css/main.7cb0ad9b.css",
-    "static/js/main.57c7f3f8.js"
+    "static/js/main.2e07e4af.js"
   ]
 }
