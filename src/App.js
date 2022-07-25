@@ -12,14 +12,14 @@ function App() {
   return (
     <BrowserRouter>
       <nav className="allPages-nav">
-        <Link to="/">| Home |</Link>
+        <Link to="/React-projects">| Home |</Link>
         <Link to="/business-card">| Business Card |</Link>
         <Link to="/travel-journal">| Travel Journal |</Link>
         <Link to="/meme-generator">| Meme Generator |</Link>
         <Link to="/tenzies-game">| Tenzies Game |</Link>
       </nav>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/React-projects" element={<Home />} />
         <Route path="business-card" element={<BusinessCard />} />
         <Route path="travel-journal" element={<TravelJournal />} />
         <Route path="meme-generator" element={<MemeGenerator />} />
