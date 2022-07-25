@@ -1,0 +1,16 @@
+.allPages-nav {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: var(--secondaryColor);
+  padding: 10px;
+}
+
+.allPages-nav > a {
+  color: var(--textLight);
+  text-decoration: none;
+  margin: 5px;
+}
+
+.allPages-nav > a:hover {
+  color: var(--purpleBackground);
+}
