@@ -14,7 +14,12 @@ function TravelCard(props) {
             <i className="fa-solid fa-location-dot"></i>
             {props.location}
           </h3>
-          <a className="location-link" href={props.googleMapsUrl}>
+          <a
+            className="location-link"
+            href={props.googleMapsUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
             View on Google Maps
           </a>
         </div>

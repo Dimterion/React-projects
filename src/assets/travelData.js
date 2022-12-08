@@ -3,7 +3,7 @@ export const travelData = [
     id: "1",
     title: "Étretat",
     location: "France, Normandy",
-    googleMapsUrl: "https://goo.gl/maps/bzVLGuv3zfAvnYey8",
+    googleMapsUrl: "https://goo.gl/maps/XnQizD8L2RaFxQUy7",
     description:
       "Étretat is a commune in the Seine-Maritime department in the Normandy region of Northwestern France. It is a tourist and farming town situated about 32 km (20 mi) northeast of Le Havre. It is located on the coast of the Pays de Caux area.",
     imageUrl:
@@ -13,7 +13,7 @@ export const travelData = [
     id: "2",
     title: "La Rochelle",
     location: "France, Nouvelle-Aquitaine",
-    googleMapsUrl: "https://goo.gl/maps/uzCSpyiiotd9MF8NA",
+    googleMapsUrl: "https://goo.gl/maps/o2BVzuu4to1hSC9U7",
     description:
       "La Rochelle is a city on the west coast of France and a seaport on the Bay of Biscay, a part of the Atlantic Ocean. It is the capital of the Charente-Maritime department. It is the most populated commune in the department and ranks fifth in the New Aquitaine region after Bordeaux, the regional capital, Limoges, Poitiers and Pau.",
     imageUrl:
@@ -23,7 +23,7 @@ export const travelData = [
     id: "3",
     title: "Mont-Saint-Michel",
     location: "France, Normandy",
-    googleMapsUrl: "https://goo.gl/maps/MHS12AdFzjxSt3Ub8",
+    googleMapsUrl: "https://goo.gl/maps/mG5wUeHtX9ZyMF2v8",
     startDate: "12 Jan, 2021",
     endDate: "24 Jan, 2021",
     description:

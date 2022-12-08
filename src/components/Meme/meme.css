@@ -44,6 +44,7 @@
 
 .meme-image-container {
   position: relative;
+  margin: 0 5px;
 }
 
 .meme-text {
@@ -66,4 +67,10 @@
 
 .top {
   top: 0;
+}
+
+@media (max-width: 992px) {
+  .meme-text {
+    font-size: 1rem;
+  }
 }

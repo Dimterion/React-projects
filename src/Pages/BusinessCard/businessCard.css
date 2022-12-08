@@ -1,10 +1,15 @@
 .businessCard-section {
   margin: 2vh auto;
-  width: 40vw;
+  width: 30vw;
   text-align: center;
   background-color: var(--secondaryColor);
   color: var(--textLight);
   border-radius: 10px;
+}
+
+.profile-header {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .profile-image {
@@ -24,6 +29,8 @@
 }
 
 .profile-link {
+  width: 150px;
+  margin: auto;
   text-decoration: none;
   color: var(--textLight);
 }
@@ -34,17 +41,21 @@
 
 .profile-contact-btn {
   background-color: var(--buttonColor);
-  width: 150px;
+  color: var(--textLight);
+  width: 100px;
   margin: 20px auto;
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
   transition: 0.5s;
   cursor: pointer;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .profile-contact-btn:hover {
-  background-color: #fff;
-  color: var(--buttonColor);
+  box-shadow: 0 2px 0 var(--textGolden);
+  color: var(--textGolden);
   transition: 0.5s;
 }
 
@@ -73,7 +84,22 @@
   height: 50px;
 }
 
+.profile-footer a {
+  transition: 0.5s;
+}
+
+.profile-footer a:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
 @media (max-width: 992px) {
+  .businessCard-section {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 768px) {
   .businessCard-section {
     width: 90vw;
   }
