@@ -2,9 +2,9 @@
 
 A group of projects completed for the Scrimba React Course and gathered under one app
 
-## Link to the page
+## Link to the app
 
-[React projects page](https://dimterion.github.io/React-projects/)
+[React Projects](https://dimterion.github.io/React-projects/)
 
 ## Built with
 
