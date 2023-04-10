@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/React-projects/static/css/main.5ca443c6.css",
-    "main.js": "/React-projects/static/js/main.b9389706.js",
+    "main.css": "/React-projects/static/css/main.51aa7396.css",
+    "main.js": "/React-projects/static/js/main.c01558cc.js",
     "static/media/memeGeneratorImg.png": "/React-projects/static/media/memeGeneratorImg.779f3f8f15984dae7fb9.png",
     "static/media/travelJournalImg.png": "/React-projects/static/media/travelJournalImg.7a30a821939fd7d709a4.png",
     "static/media/avatar.png": "/React-projects/static/media/avatar.2cb985175aab4a5202a8.png",
     "static/media/tenziesGameImg.png": "/React-projects/static/media/tenziesGameImg.7fc05694531681cebf9d.png",
     "static/media/businessCardImg.png": "/React-projects/static/media/businessCardImg.a6edc3b00b5b27b65f63.png",
     "index.html": "/React-projects/index.html",
-    "main.5ca443c6.css.map": "/React-projects/static/css/main.5ca443c6.css.map",
-    "main.b9389706.js.map": "/React-projects/static/js/main.b9389706.js.map"
+    "main.51aa7396.css.map": "/React-projects/static/css/main.51aa7396.css.map",
+    "main.c01558cc.js.map": "/React-projects/static/js/main.c01558cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ca443c6.css",
-    "static/js/main.b9389706.js"
+    "static/css/main.51aa7396.css",
+    "static/js/main.c01558cc.js"
   ]
 }
