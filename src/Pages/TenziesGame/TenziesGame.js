@@ -63,13 +63,13 @@ function TenziesGame() {
           return tenzie.isHeld ? tenzie : generateNewTenzie();
         })
       );
-      setCount(prevCount => {
-        return prevCount = prevCount + 1
-      })
+      setCount((prevCount) => {
+        return (prevCount = prevCount + 1);
+      });
     } else {
       setGameState(false);
       setTenzies(allNewTenzies());
-      setCount(0)
+      setCount(0);
     }
   }
 
@@ -81,7 +81,9 @@ function TenziesGame() {
         current value between rolls.
         <br></br>
         <br></br>
-        <div>Count: {count}</div>
+        <div>
+          <b>Number of rolls:</b> {count}
+        </div>
       </div>
       <div className="tenziesElements-container">{finalArray}</div>
       <button onClick={roll} className="rollDice-btn">
