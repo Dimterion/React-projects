@@ -7,6 +7,7 @@ import "./tenziesGame.css";
 function TenziesGame() {
   const [tenzies, setTenzies] = useState(allNewTenzies());
   const [gameState, setGameState] = useState(false);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     const allHeld = tenzies.every((tenzie) => tenzie.isHeld);
@@ -62,19 +63,26 @@ function TenziesGame() {
           return tenzie.isHeld ? tenzie : generateNewTenzie();
         })
       );
+      setCount(prevCount => {
+        return prevCount = prevCount + 1
+      })
     } else {
       setGameState(false);
       setTenzies(allNewTenzies());
+      setCount(0)
     }
   }
 
   return (
     <section className="tenzies-section">
       <h1 className="game-title">Tenzies</h1>
-      <p className="game-instructions">
+      <div className="game-instructions">
         Roll until all dice are the same. Click each die to freeze it at its
         current value between rolls.
-      </p>
+        <br></br>
+        <br></br>
+        <div>Count: {count}</div>
+      </div>
       <div className="tenziesElements-container">{finalArray}</div>
       <button onClick={roll} className="rollDice-btn">
         {gameState ? "New Game" : "Roll"}
