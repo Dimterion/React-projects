@@ -9,6 +9,8 @@ function TenziesGame() {
   const [tenzies, setTenzies] = useState(allNewTenzies());
   const [gameState, setGameState] = useState(false);
   const [count, setCount] = useState(0);
+  const [timer, setTimer] = useState(0);
+  const [intervalId, setIntervalId] = useState(null);
 
   useEffect(() => {
     const allHeld = tenzies.every((tenzie) => tenzie.isHeld);
@@ -17,11 +19,24 @@ function TenziesGame() {
 
     if (allHeld && allSameValue) {
       setGameState(true);
+      clearInterval(intervalId);
     }
-  }, [tenzies]);
+
+    if (timer > 600) {
+      setGameState(false);
+      setCount(0);
+      setStart(false);
+      clearInterval(intervalId);
+      setTimer(0);
+    }
+  }, [tenzies, intervalId, timer]);
 
   function startGame() {
     setStart(true);
+    const id = setInterval(() => {
+      setTimer((timer) => timer + 1);
+    }, 1000);
+    setIntervalId(id);
   }
 
   function generateNewTenzie() {
@@ -46,7 +61,7 @@ function TenziesGame() {
         key={tenzie.id}
         value={start ? tenzie.value : ""}
         isHeld={tenzie.isHeld}
-        holdTenzie={start && (() => holdTenzie(tenzie.id))}
+        holdTenzie={start ? () => holdTenzie(tenzie.id) : () => null}
       />
     );
   });
@@ -76,6 +91,8 @@ function TenziesGame() {
       setTenzies(allNewTenzies());
       setCount(0);
       setStart(false);
+      clearInterval(intervalId);
+      setTimer(0);
     }
   }
 
@@ -89,6 +106,9 @@ function TenziesGame() {
         <br></br>
         <div>
           <b>Number of rolls:</b> {count}
+          <br></br>
+          <br></br>
+          <b>Timer:</b> {timer}
         </div>
       </div>
       <div className="tenziesElements-container">{finalArray}</div>
