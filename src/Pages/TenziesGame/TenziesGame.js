@@ -5,6 +5,7 @@ import Confetti from "react-confetti";
 import "./tenziesGame.css";
 
 function TenziesGame() {
+  const [start, setStart] = useState(false);
   const [tenzies, setTenzies] = useState(allNewTenzies());
   const [gameState, setGameState] = useState(false);
   const [count, setCount] = useState(0);
@@ -18,6 +19,10 @@ function TenziesGame() {
       setGameState(true);
     }
   }, [tenzies]);
+
+  function startGame() {
+    setStart(true);
+  }
 
   function generateNewTenzie() {
     return {
@@ -39,9 +44,9 @@ function TenziesGame() {
     return (
       <TenzieElement
         key={tenzie.id}
-        value={tenzie.value}
+        value={start ? tenzie.value : ""}
         isHeld={tenzie.isHeld}
-        holdTenzie={() => holdTenzie(tenzie.id)}
+        holdTenzie={start && (() => holdTenzie(tenzie.id))}
       />
     );
   });
@@ -70,6 +75,7 @@ function TenziesGame() {
       setGameState(false);
       setTenzies(allNewTenzies());
       setCount(0);
+      setStart(false);
     }
   }
 
@@ -86,9 +92,15 @@ function TenziesGame() {
         </div>
       </div>
       <div className="tenziesElements-container">{finalArray}</div>
-      <button onClick={roll} className="rollDice-btn">
-        {gameState ? "New Game" : "Roll"}
-      </button>
+      {start ? (
+        <button onClick={roll} className="rollDice-btn">
+          {gameState ? "New Game" : "Roll"}
+        </button>
+      ) : (
+        <button onClick={startGame} className="rollDice-btn">
+          Start
+        </button>
+      )}
       {gameState && <Confetti />}
     </section>
   );
